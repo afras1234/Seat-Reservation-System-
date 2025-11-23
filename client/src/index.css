@@ -2,14 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-/* small custom styles */
-body { @apply bg-gray-100 text-gray-800; }
-.container-max { max-width: 1200px; margin-left:auto; margin-right:auto; }
-.card { @apply bg-white rounded-xl p-6 shadow-md; }
-.topbar { @apply bg-blue-600 text-white py-3 px-6 shadow; }
-.stat-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap:1rem; }
-.table { @apply w-full text-sm; border-collapse: collapse; }
-.table th, .table td { @apply px-4 py-3; }
-.btn { @apply px-4 py-2 rounded-md font-medium; }
-.btn-blue { @apply bg-blue-600 text-white hover:bg-blue-700; }
-.btn-danger { @apply bg-red-500 text-white hover:bg-red-600; }
+/* Global body styling */
+body {
+  @apply bg-gray-100 text-gray-800;
+}
+
+/* Custom container */
+.container-max {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Card component */
+.card {
+  @apply bg-white rounded-xl p-6 shadow-md;
+}
+
+/* Top bar */
+.topbar {
+  @apply bg-blue-600 text-white py-3 px-6 shadow;
+}
+
+/* Stats grid */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+/* Tables */
+.table {
+  @apply w-full text-sm;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  @apply px-4 py-3;
+}
+
+/* Buttons */
+.btn {
+  @apply px-4 py-2 rounded-md font-medium;
+}
+
+.btn-blue {
+  @apply bg-blue-600 text-white hover:bg-blue-700;
+}
+
+.btn-danger {
+  @apply bg-red-500 text-white hover:bg-red-600;
+}
